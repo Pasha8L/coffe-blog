@@ -4,12 +4,14 @@
   "description": "Редакционный сайт о кофе",
   "main": "server/index.js",
   "engines": {
-    "node": "18.x"
+    "node": "18.x",
+    "npm": "9.x"
   },
   "scripts": {
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "nodemon server/index.js",
     "client": "cd client && npm start",
+    "postinstall": "cd client && npm install",
     "build": "cd client && npm run build",
     "start": "npm run build && node server/index.js",
     "heroku-postbuild": "cd client && npm install && npm run build"
