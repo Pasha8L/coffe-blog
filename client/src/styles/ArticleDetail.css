@@ -1,0 +1,309 @@
+/* ArticleDetail.css */
+.article-detail {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.article-header {
+  margin-bottom: 40px;
+}
+
+.header-image {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.article-detail h1 {
+  font-size: 2.5em;
+  margin: 20px 0;
+  color: #333;
+  line-height: 1.2;
+}
+
+.article-header-meta {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  color: #666;
+  font-size: 0.95em;
+  margin-bottom: 20px;
+}
+
+.article-header-meta span {
+  display: flex;
+  align-items: center;
+}
+
+.category,
+.region {
+  background: #f0f0f0;
+  padding: 5px 12px;
+  border-radius: 15px;
+  color: #555;
+}
+
+.article-actions {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.like-btn,
+.save-btn {
+  padding: 12px 20px;
+  border: 2px solid #8B4513;
+  background: white;
+  color: #8B4513;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: all 0.3s;
+}
+
+.like-btn:hover,
+.save-btn:hover {
+  background: #f5f5f5;
+}
+
+.like-btn.liked,
+.save-btn.saved {
+  background: #8B4513;
+  color: white;
+}
+
+.article-body {
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.article-body p {
+  margin-bottom: 15px;
+}
+
+.article-body h2,
+.article-body h3 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.article-rating {
+  background: #f9f9f9;
+  padding: 20px;
+  border-left: 4px solid #8B4513;
+  margin-bottom: 40px;
+  border-radius: 5px;
+}
+
+.article-rating h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.3em;
+}
+
+.article-rating p {
+  margin: 0;
+  color: #666;
+}
+
+.comments-section {
+  margin-top: 50px;
+  padding-top: 40px;
+  border-top: 2px solid #eee;
+}
+
+.comments-section h2 {
+  margin-bottom: 30px;
+  font-size: 1.8em;
+  color: #333;
+}
+
+.comment-form {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.comment-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  font-family: inherit;
+  resize: vertical;
+  min-height: 100px;
+  margin-bottom: 15px;
+}
+
+.comment-input:focus {
+  outline: none;
+  border-color: #8B4513;
+  box-shadow: 0 0 0 3px rgba(139, 69, 19, 0.1);
+}
+
+.comment-form-actions {
+  display: flex;
+  gap: 15px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.rating-select {
+  flex: 1;
+  min-width: 200px;
+}
+
+.rating-select label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.rating-select select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.submit-btn {
+  padding: 12px 30px;
+  background: #8B4513;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: #A0522D;
+}
+
+.auth-prompt {
+  background: #fff3cd;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  color: #856404;
+}
+
+.auth-prompt a {
+  color: #8B4513;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.auth-prompt a:hover {
+  text-decoration: underline;
+}
+
+.comments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.comment {
+  background: white;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+
+.comment-header {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.comment-header strong {
+  color: #333;
+  font-size: 1.05em;
+}
+
+.rating {
+  color: #ffc107;
+  font-size: 0.9em;
+}
+
+.comment-header .date {
+  color: #999;
+  font-size: 0.9em;
+  margin-left: auto;
+}
+
+.comment-content {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.delete-btn {
+  padding: 6px 12px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background 0.3s;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+}
+
+.error {
+  color: #dc3545;
+  text-align: center;
+  padding: 40px;
+  font-size: 1.2em;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.2em;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .article-detail h1 {
+    font-size: 1.8em;
+  }
+
+  .article-body {
+    font-size: 1em;
+  }
+
+  .article-header-meta {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .comment-form-actions {
+    flex-direction: column;
+  }
+
+  .rating-select {
+    width: 100%;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+}
