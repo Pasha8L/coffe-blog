@@ -1,6 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
 const connectDB = require('./config/db');
 
 const app = express();
@@ -17,6 +18,14 @@ app.use('/api/comments', require('./routes/comments'));
 
 app.get('/api/health', (req, res) => {
   res.json({ status: 'OK' });
+});
+
+// Раздаём React приложение
+const buildPath = path.join(__dirname, '../client/build');
+app.use(express.static(buildPath));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(buildPath, 'index.html'));
 });
 
 const PORT = process.env.PORT || 5000;
