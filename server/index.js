@@ -22,9 +22,10 @@ app.get('/api/health', (req, res) => {
 
 // Раздаём React приложение
 const buildPath = path.join(__dirname, '../client/build');
-app.use(express.static(buildPath));
+app.use(express.static(buildPath, { maxAge: '1d', etag: false }));
 
 app.get('*', (req, res) => {
+  res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
   res.sendFile(path.join(buildPath, 'index.html'));
 });
 
